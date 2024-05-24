@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css"/>
+</head>
+<body>
+    <Section>
+        <div id="container">
+            <div class="row" id="row1">
+                <input disabled id="special" type="text" placeholder="0" />
+            </div>
+        <div class="row">
+            <input type="button" value="7"onclick="(() => {addMe(7)})"/>
+            <input type="button" value="8" onclick="(()=>{addMe(8)})()" />
+            <input type="button" value="9" onclick="(()=>{addMe(9)})()" />
+            <input type="button" value="+" onclick="(()=>{addMe('+')})()" />
+        </div>
+        <div class="row">
+            <input type="button" value="4" onclick="(()=>{addMe(4)})()" />
+            <input type="button" value="5" onclick="(()=>{addMe(5)})()" />
+            <input type="button" value="6" onclick="(()=>{addMe(7)})()" />
+            <input type="button" value="-" onclick="(()=>{addMe('-')})()" />
+        </div>
+        <div class="row">
+            <input type="button" value="1" onclick="(()=>{addMe(1)})()" />
+            <input type="button" value="2" onclick="(()=>{addMe(2)})()" />
+            <input type="button" value="3" onclick="(()=>{addMe(3)})()" />
+            <input type="button" value="=" onclick="showResult()" />
+        </div>
+
+    </Section>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
